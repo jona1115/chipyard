@@ -12,3 +12,6 @@ This is a forked version of Chipyard for working on the BOOM core for CPRE581 fi
     3. BOOM! You now have BOOM for simulation! Now you can:  
         1. Run one of the riscv-tools assembly tests: `./simulator-chipyard.harness-MediumBoomV4Config $RISCV/riscv64-unknown-elf/share/riscv-tests/isa/rv64ui-p-simple`
         2. Run simulations, see the [Chipyard Docs](https://chipyard.readthedocs.io/en/latest/Simulation/Software-RTL-Simulation.html#sw-rtl-sim-intro) for more details.
+
+### Links to submodules also forked by our team:
+- BOOM: [https://github.com/jona1115/riscv-boom](https://github.com/jona1115/riscv-boom)
