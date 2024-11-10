@@ -1,4 +1,4 @@
-# Chipyard for BOOM for CPRE581!
+# Chipyard for CPRE581!
 
 This is a forked version of Chipyard for working on the BOOM core for CPRE581 final project.
 
