@@ -1,3 +1,41 @@
+# Chipyard for BOOM for CPRE581!
+
+This is a forked version of Chipyard for working on the BOOM core for CPRE581 final project.
+
+### How to use?
+1. Clone this repo.
+2. Build it following [Chipyard's docs](https://chipyard.readthedocs.io/en/latest/Chipyard-Basics/Initial-Repo-Setup.html)
+3. You need to source the start-up script everytime: `source env.sh`
+4. Build BOOM for Verilator (the simulator):  
+    1. cd into sims/verilator: `cd sims/verilator`
+    2. Run: `make CONFIG=MediumBoomV4Config` (There are other BOOM configs, checkout `<chipyard root>/generators/chipyard/src/main/scala/config/BoomConfigs.scala` for the list)
+    3. BOOM! You now have BOOM for simulation! Now you can:  
+        1. Run one of the riscv-tools assembly tests: `./simulator-chipyard.harness-MediumBoomV4Config $RISCV/riscv64-unknown-elf/share/riscv-tests/isa/rv64ui-p-simple`
+        2. Run simulations, see the [Chipyard Docs](https://chipyard.readthedocs.io/en/latest/Simulation/Software-RTL-Simulation.html#sw-rtl-sim-intro) for more details.
+
+Below are the list of commands for easy access:  
+| Command | Run where | Comments |
+| --- | --- | --- |
+| `make CONFIG=MediumBoomV4Config` | <chipyard>/sims/verilator | This is to build BOOM for Verilator |
+| `make CONFIG=GemminiRocketConfig` | <chipyard>/sims/verilator | This is to build Gemmini for Rocket |
+
+
+### How is this repo built?
+> Below are instructions from [Chipyard docs](https://chipyard.readthedocs.io/en/latest/Chipyard-Basics/Initial-Repo-Setup.html)
+1. Make sure you set up the conda correctly as per [this guide](https://chipyard.readthedocs.io/en/latest/Chipyard-Basics/Initial-Repo-Setup.html#default-requirements-installation).  
+    - Tips: If you get an error at step 9, run this `sudo apt-get install libguestfs-tools`
+2. Clone repo (either the [official chipyard repo](https://github.com/ucb-bar/chipyard), or this repo works)
+3. `./build-setup.sh riscv-tools` (takes time), if it fails at somewhat random spots, try rerunning the same command.
+4. Done! You should be able to `source env.sh` and start doing stuff!
+
+### Links to submodules also forked by our team:
+- BOOM: [https://github.com/jona1115/riscv-boom](https://github.com/jona1115/riscv-boom)
+- Gemmini: [https://github.com/jona1115/gemmini](https://github.com/jona1115/gemmini)
+- gemmini-rocc-test: [https://github.com/jona1115/gemmini-rocc-tests](https://github.com/jona1115/gemmini-rocc-tests)
+
+---
+# Below are the original README.md content:
+
 ![CHIPYARD](https://github.com/ucb-bar/chipyard/raw/main/docs/_static/images/chipyard-logo-full.png)
 
 # Chipyard Framework [![Test](https://github.com/ucb-bar/chipyard/actions/workflows/chipyard-run-tests.yml/badge.svg)](https://github.com/ucb-bar/chipyard/actions)
