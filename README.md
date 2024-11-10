@@ -21,7 +21,7 @@ Below are the list of commands for easy access:
 
 
 ### How is this repo built?
-> Below are instructions from [Chipyard docs](https://chipyard.readthedocs.io/en/latest/Chipyard-Basics/Initial-Repo-Setup.html)
+> Below are summary of instructions from [Chipyard docs](https://chipyard.readthedocs.io/en/latest/Chipyard-Basics/Initial-Repo-Setup.html)
 1. Make sure you set up the conda correctly as per [this guide](https://chipyard.readthedocs.io/en/latest/Chipyard-Basics/Initial-Repo-Setup.html#default-requirements-installation).  
     - Tips: If you get an error at step 9, run this `sudo apt-get install libguestfs-tools`
 2. Clone repo (either the [official chipyard repo](https://github.com/ucb-bar/chipyard), or this repo works)
