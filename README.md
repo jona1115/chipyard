@@ -17,12 +17,12 @@ Below are the list of commands for easy access:
 | Command | Run where | Comments |
 | --- | --- | --- |
 | Building a core |
-| `make CONFIG=MediumBoomV4Config` | <chipyard>/sims/verilator | This is to build BOOM for Verilator |
-| `make CONFIG=GemminiRocketConfig` | <chipyard>/sims/verilator | This is to build Gemmini for Rocket |
-| `make CONFIG=RocketGemminiFor581Config` | <chipyard>/sims/verilator | This is to build Rocket+Gemmini for 581 |
+| `make CONFIG=MediumBoomV4Config` | \<chipyard\>/sims/verilator | This is to build BOOM for Verilator |
+| `make CONFIG=GemminiRocketConfig` | \<chipyard\>/sims/verilator | This is to build Gemmini for Rocket |
+| `make CONFIG=RocketGemminiFor581Config` | \<chipyard\>/sims/verilator | This is to build Rocket+Gemmini for 581 |
 | Running simulations |
-| `./simulator-chipyard.harness-RocketGemminiFor581Config $RISCV/riscv64-unknown-elf/share/riscv-tests/benchmarks/vvadd.riscv` | <chipyard>/sims/verilator | This is to run the vvadd.riscv benchmark |
-| `./simulator-chipyard.harness-RocketGemminiFor581Config ~/chipyard/tests/hello.riscv` | <chipyard>/sims/verilator | This is to run the hello.c test program |
+| `./simulator-chipyard.harness-RocketGemminiFor581Config $RISCV/riscv64-unknown-elf/share/riscv-tests/benchmarks/vvadd.riscv` | \<chipyard\>/sims/verilator | This is to run the vvadd.riscv benchmark |
+| `./simulator-chipyard.harness-RocketGemminiFor581Config ~/chipyard/tests/hello.riscv` | \<chipyard\>/sims/verilator | This is to run the hello.c test program |
 
 
 > I take notes while doing stuff, [check them out](https://github.com/jona1115/chipyard/blob/main/JonathanNotes.md)!
