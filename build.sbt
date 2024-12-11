@@ -247,6 +247,35 @@ lazy val gemmini = freshProject("gemmini", file("generators/gemmini"))
   .dependsOn(rocketchip)
   .settings(libraryDependencies ++= rocketLibDeps.value)
   .settings(commonSettings)
+  .settings(
+    Test / scalaSource := baseDirectory.value / "test/scala", // Solution to get tests to work :)
+  )
+  .settings(
+      libraryDependencies ++= Seq(
+          //"edu.berkeley.cs" %% "chisel-iotesters" % "2.5.6", Upgraded to chiseltest https://github.com/ucb-bar/chiseltest OLD TESTS WILL NOT WORK :( and chisel-iotesters are incompatible with working libraries
+          "edu.berkeley.cs" %% "chiseltest" % "6.0-SNAPSHOT",
+          //"org.scalanlp" %% "breeze" % "1.1", 
+          "org.scalatest" %% "scalatest" % "3.2.+" % "test", // Origionally written for 2.2.+, flatspec imports and usage must be modified
+      )
+    )
+  //.settings(scalaTestSettings)
+
+  // Probably useless anymore, but keeping around just in case
+
+  // .settings(
+  //   libraryDependencies ++= Seq(
+  //     //"org.scala-tools.testing" % "specs" % "1.6.9" % Test,
+  //     "org.specs2" %% "specs2-core" % "4.10.6" % Test,
+  //     "org.scalacheck" %% "scalacheck" % "1.15.4" % Test,
+  //     //"junit" % "junit" % "4.13.2" % Test,
+  //     "org.scalatest" %% "scalatest" % "2.2.6" % Test,
+  //     //"com.github.sbt" % "junit-interface" % "0.13.2" % Test,
+  //     //"org.scalameta" %% "munit" % "0.7.29" % Test,
+  //     //"dev.zio" %% "zio-test" % "2.0.0" % Test,
+  //     //"dev.zio" %% "zio-test-sbt" % "2.0.0" % Test
+  //   )
+  //)
+
 
 lazy val nvdla = (project in file("generators/nvdla"))
   .dependsOn(rocketchip)

@@ -23,12 +23,13 @@ Below are the list of commands for easy access:
 | Running simulations |
 | `./simulator-chipyard.harness-RocketGemminiFor581Config $RISCV/riscv64-unknown-elf/share/riscv-tests/benchmarks/vvadd.riscv` | `<chipyard>/sims/verilator` | This is to run the vvadd.riscv benchmark |
 | `./simulator-chipyard.harness-RocketGemminiFor581Config ~/chipyard/tests/hello.riscv` | `<chipyard>/sims/verilator` | This is to run the hello.c test program |
-| `./simulator-chipyard.harness-RocketGemminiFor581Config ../../generators/gemmini/software/gemmini-rocc-tests/build/bareMetalC/MaMA_matmul_ws-baremetal` | `<chipyard>/sims/verilator` | Run MaMA benchmark for matmul ws. |
+| `./simulator-chipyard.harness-RocketGemminiFor581Config ~/chipyard/generators/gemmini/software/gemmini-rocc-tests/build/bareMetalC/MaMA_matmul_ws-baremetal` | `<chipyard>/sims/verilator` | Run MaMA benchmark for matmul ws (with gemmini). |
 | `./simulator-chipyard.harness-RocketGemminiFor581Config $RISCV/riscv64-unknown-elf/share/riscv-tests/benchmarks/vvadd.riscv` | `<chipyard>/sims/verilator` | This is to run the vvadd.riscv benchmark |
 | `./simulator-chipyard.harness-RocketGemminiFor581Config ~/chipyard/tests/hello.riscv` | `<chipyard>/sims/verilator` | This is to run the hello.c test program |
 | `spike <a riscv exe>` | anywhere | Simulate a RISC-V program. |
 | `spike ~/chipyard/generators/gemmini/software/gemmini-rocc-tests/build/bareMetalC/MaMA_matmul_cpu-baremetal` | anywhere | Simulate our matmul cpu program. |
-
+| `spike --extension=gemmini ~/chipyard/generators/gemmini/software/gemmini-rocc-tests/build/bareMetalC/MaMA_matmul_ws-baremetal` | anywhere | Simulate our matmul gemmini program. |
+| `make run-binary-debug CONFIG=RocketGemminiFor581Config BINARY=~/chipyard/tests/hello.riscv` | `<chipyard>/sims/verilator` | Build the simulation, and run the binary and generate a waveform file. |
 
 > I take notes while doing stuff, [check them out](https://github.com/jona1115/chipyard/blob/main/JonathanNotes.md)!
 
