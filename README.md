@@ -47,6 +47,10 @@ Below are the list of commands for easy access:
 - Gemmini: [https://github.com/jona1115/gemmini](https://github.com/jona1115/gemmini)
 - gemmini-rocc-test: [https://github.com/jona1115/gemmini-rocc-tests](https://github.com/jona1115/gemmini-rocc-tests)
 
+### Links to our notes when working with the framework and our CPRE581 project:
+- Jonathan: [Notes](https://github.com/jona1115/chipyard/blob/main/JonathanNotes.md)
+- Steve: [Notes](https://github.com/jona1115/chipyard/blob/main/StevenNotes.md)
+
 ---
 # Below are the original README.md content:
 
