@@ -13,4 +13,4 @@ As far as I can tell there are two places where you can find them:
 Chisel Test: https://github.com/ucb-bar/chiseltest
 
 ### SBT sutff:
-`sbt "project gemmini" "testOnly / gemmini.MeshWithDelaysUnitTest"`
+sbt "project gemmini" "testOnly / gemmini.MeshWithDelaysTester"
