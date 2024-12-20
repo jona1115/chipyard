@@ -1,11 +1,11 @@
-# Chipyard for CPRE581!
+# Chipyard for Project-SADD-MaMA!
 
-This is a forked version of Chipyard for working on the BOOM core for CPRE581 final project.
+This is the branch used in Project SADD MaMA.
 
 ### How to use?
 1. Clone this repo.
 2. Build it following [Chipyard's docs](https://chipyard.readthedocs.io/en/latest/Chipyard-Basics/Initial-Repo-Setup.html)
-3. You need to source the start-up script everytime: `source env.sh`
+3. You need to source the start-up script every time: `source env.sh`
 4. Build BOOM for Verilator (the simulator):  
     1. cd into sims/verilator: `cd sims/verilator`
     2. Run: `make CONFIG=MediumBoomV4Config` (There are other BOOM configs, checkout `<chipyard root>/generators/chipyard/src/main/scala/config/BoomConfigs.scala` for the list)
@@ -13,7 +13,7 @@ This is a forked version of Chipyard for working on the BOOM core for CPRE581 fi
         1. Run one of the riscv-tools assembly tests: `./simulator-chipyard.harness-MediumBoomV4Config $RISCV/riscv64-unknown-elf/share/riscv-tests/isa/rv64ui-p-simple`
         2. Run simulations, see the [Chipyard Docs](https://chipyard.readthedocs.io/en/latest/Simulation/Software-RTL-Simulation.html#sw-rtl-sim-intro) for more details.
 
-Below are the list of commands for easy access:  
+Below is the list of commands for easy access:  
 | Command | Run where | Comments |
 | --- | --- | --- |
 | Building a core |
@@ -31,9 +31,6 @@ Below are the list of commands for easy access:
 | `spike --extension=gemmini ~/chipyard/generators/gemmini/software/gemmini-rocc-tests/build/bareMetalC/MaMA_matmul_ws-baremetal` | anywhere | Simulate our matmul gemmini program. |
 | `make run-binary-debug CONFIG=RocketGemminiFor581Config BINARY=~/chipyard/tests/hello.riscv` | `<chipyard>/sims/verilator` | Build the simulation, and run the binary and generate a waveform file. |
 
-> I take notes while doing stuff, [check them out](https://github.com/jona1115/chipyard/blob/main/JonathanNotes.md)!
-
-
 ### How is this repo built?
 > Below are summary of instructions from [Chipyard docs](https://chipyard.readthedocs.io/en/latest/Chipyard-Basics/Initial-Repo-Setup.html)
 1. Make sure you set up the conda correctly as per [this guide](https://chipyard.readthedocs.io/en/latest/Chipyard-Basics/Initial-Repo-Setup.html#default-requirements-installation).  
@@ -44,12 +41,12 @@ Below are the list of commands for easy access:
 
 ### Links to submodules also forked by our team:
 - BOOM: [https://github.com/jona1115/riscv-boom](https://github.com/jona1115/riscv-boom)
-- Gemmini: [https://github.com/jona1115/gemmini](https://github.com/jona1115/gemmini)
-- gemmini-rocc-test: [https://github.com/jona1115/gemmini-rocc-tests](https://github.com/jona1115/gemmini-rocc-tests)
+- Gemmini: [https://github.com/jona1115/gemmini](https://github.com/jona1115/gemmini/tree/Project-SADD-MaMA)
+- gemmini-rocc-test: [https://github.com/jona1115/gemmini-rocc-tests](https://github.com/jona1115/gemmini-rocc-tests/tree/Project-SADD-MaMA)
 
 ### Links to our notes when working with the framework and our CPRE581 project:
-- Jonathan: [Notes](https://github.com/jona1115/chipyard/blob/main/JonathanNotes.md)
-- Steve: [Notes](https://github.com/jona1115/chipyard/blob/main/StevenNotes.md)
+- Jonathan: [Notes](https://github.com/jona1115/chipyard/blob/Project-SADD-MaMA/JonathanNotes.md)
+- Steve: [Notes](https://github.com/jona1115/chipyard/blob/Project-SADD-MaMA/StevenNotes.md)
 
 ---
 # Below are the original README.md content:
