@@ -1,6 +1,6 @@
 # Chipyard for Project-SADD-MaMA!
 
-This is the branch used in Project SADD MaMA.
+This is the branch used in Project SADD MaMA. See our project report [here](https://github.com/jona1115/chipyard/blob/Project-SADD-MaMA/CPRE581_Project_Final_Report.pdf).
 
 ### How to use?
 1. Clone this repo.
